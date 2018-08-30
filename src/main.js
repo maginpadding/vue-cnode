@@ -5,15 +5,12 @@ import App from './App'
 import router from './router'
 // 引入element-ui
 import Element from 'element-ui';
-import { Button } from 'element-ui';
-// Vue.use(Element, { size: 'small', zIndex: 3000 });
-Vue.use(Button);
+
 import 'element-ui/lib/theme-chalk/index.css';
+
 // 引入重置样式文件->已压缩
 import '../static/css/normalize.css';
 //更改默认行高
-// import InitScreenH from './directive/InitScreenH'
-// Vue.use(InitScreenH);
 
 Vue.use(Element)
 
