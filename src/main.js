@@ -18,7 +18,6 @@ Vue.use(Element)
 import api from './api/API.js'
 // 将API方法绑定到全局
 Vue.prototype.$api = api
-// 
 // 引用工具类
 
 // 引用工具文件

@@ -12,7 +12,7 @@
             </el-col>
             <el-col :span="12" :offset="2">
               <div class="search-input">
-                <el-input size="mini" placeholder="请输入内容" suffix-icon="el-icon-date" v-model="input9">
+                <el-input size="mini" placeholder="请输入内容" suffix-icon="el-icon-date" v-model="searchInput">
                 </el-input>
               </div>
             </el-col>
@@ -22,10 +22,7 @@
       <!-- 右侧导航 -->
       <el-col :span="12" :gutter="20">
         <div class="nav-right">
-          <a href="">首页</a>
-          <a href="">首页</a>
-          <a href="">首页</a>
-          <a href="">首页</a>
+          <a v-for="(item, index) in navRight" :key="index" :href="item.href">{{item.name}}</a>
         </div>
       </el-col>
     </el-row>
@@ -37,10 +34,27 @@
 export default {
   data() {
     return {
-      input6: '',
-      input7: '',
-      input8: '',
-      input9: ''
+      //searchInput 搜索框
+      searchInput: '',
+      //右侧导航
+      navRight: [
+        {
+          name: '首页',
+          href: '/'
+        },
+        {
+          name: '首页',
+          href: '/'
+        },
+        {
+          name: '首页',
+          href: '/'
+        },
+        {
+          name: '首页',
+          href: '/'
+        }
+      ]
     }
   }
 }

@@ -41,9 +41,7 @@ export default {
   },
   created() {
     //这里，表示当我们的组件加载完成时，需要执行的内容。比如这里，我们就让组件在加载完成时，执行一个叫 this.getData() 的函数。
-    console.log(this.$api)
     this.getData()
-    console.log(this.list)
   },
   methods: {
     getData() {
